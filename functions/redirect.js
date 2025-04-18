@@ -7,8 +7,8 @@ exports.handler = async (event) => {
     statusCode: 302,
     headers: {
       Location: 'https://onlyfans.com/barbarella_xoxo',
-      'Cache-Control': 'no-cache'
+      'Cache-Control': 'no-cache',
     },
-    body: ''
+    body: '',
   };
 };
