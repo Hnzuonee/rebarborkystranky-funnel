@@ -3,50 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Barbarella — Oficiální odkazy</title>
+  <title>VIP Gate</title>
 
-  <style>
-    body{
-      font-family:Arial, sans-serif;
-      background:#000 url('foto.jpg') center/cover no-repeat;
-      display:flex;justify-content:center;align-items:center;
-      min-height:100vh;margin:0;
-    }
-    .wrap{width:100%;max-width:340px;text-align:center}
-    .btn{
-      display:block;width:100%;padding:16px;margin:10px 0;
-      font-size:20px;font-weight:bold;border:none;border-radius:16px;
-      color:#fff;text-decoration:none;cursor:pointer;transition:.15s;
-    }
-    .btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.25)}
-    .tiktok {background:#000;}
-    .twitter{background:#1d9bf0;}
-    .vip{
-      background:linear-gradient(90deg,#f0d9a0 0%,#ecc184 50%,#f0d9a0 100%);
-      color:#3c2a00;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+  <main class="panel">
+    <img src="/foto.jpg" alt="VIP cover" class="hero">
 
-  <div class="wrap">
-    <!-- TikTok – zůstává in‑app, bezpečné -->
-    <a href="https://www.tiktok.com/@barbarella_xoxo"
-       class="btn tiktok" target="_blank" rel="noopener noreferrer">
-       🎶 TikTok
-    </a>
+    <h1 class="headline">Tvoje exkluzivní cesta</h1>
+    <p class="subtitle">Jsi jen jedno kliknutí od VIP zóny.</p>
 
-    <!-- X / Twitter -->
-    <a href="https://x.com/barbarella_baru"
-       class="btn twitter" target="_blank" rel="noopener noreferrer">
-       🐦 X (Twitter)
-    </a>
-
-    <!-- VIP – přechod na druhou doménu -->
-    <a href="https://rebaborkystranky.com" class="btn vip">
-       💎 Moje VIP stránka
-    </a>
-  </div>
-
+    <form action="/.netlify/functions/redirect" method="POST">
+      <button class="btn-go" type="submit" aria-label="Pokračovat">
+        Pokračovat&nbsp;➡️
+      </button>
+    </form>
+  </main>
 </body>
 </html>
