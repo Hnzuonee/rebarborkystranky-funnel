@@ -1,40 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbarella — Official Hub</title>
 
   <!-- Open Graph -->
   <meta property="og:title"       content="Barbarella — Official Links">
-  <meta property="og:description" content="Find all my verified socials & VIP access here.">
-  <meta property="og:image"       content="https://rebarborkystranky.com/foto.jpg">
+  <meta property="og:description" content="Find all my verified socials &amp; VIP access here.">
+  <meta property="og:image"       content="https://rebaborkystranky.com/foto.jpg"><!-- opravená doména -->
   <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://rebarborkystranky.com">
+  <meta property="og:url"         content="https://rebaborkystranky.com"><!-- opravená doména -->
 
-  <!-- Fonts & CSS -->
+  <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css?v=1">
 </head>
 <body>
   <div class="card">
-    <img src="/foto.jpg" class="pfp" alt="Barbarella profile photo">
+    <img src="/foto.jpg" class="pfp" alt="Barbarella">
 
     <h1 class="name">Barbarella</h1>
     <p class="tagline">✨ Official Links ✨</p>
 
-    <a class="btn tiktok" href="https://www.tiktok.com/@barbarella_xoxo" target="_blank" rel="noopener noreferrer">
-      🎶 TikTok
+    <!-- TikTok -->
+    <a class="btn tiktok" href="https://www.tiktok.com/@barbarella_xoxo"
+       target="_blank" rel="noopener noreferrer">
+       🎶 TikTok
     </a>
 
+    <!-- VIP / OnlyFans  (POST → 302) -->
     <form action="/.netlify/functions/redirect" method="POST">
       <button class="btn vip" type="submit" aria-label="VIP Access">
-        💎 VIP Content
+        💎 VIP Content
       </button>
     </form>
 
-    <a class="btn twitter" href="https://x.com/barbarella_baru" target="_blank" rel="noopener noreferrer">
-      🐦 X (Twitter)
+    <!-- Twitter / X -->
+    <a class="btn twitter" href="https://x.com/barbarella_baru"
+       target="_blank" rel="noopener noreferrer">
+       🐦 X (Twitter)
     </a>
   </div>
 </body>
