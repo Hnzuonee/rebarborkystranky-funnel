@@ -1,4 +1,3 @@
-<!-- rebaborkystranka.com/index.html  -->
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -11,17 +10,17 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <!-- dummy span => jiný DOM hash při každém buildu -->
-  <span class="noise-{{SALT}}" style="display:none">{{SALT}}</span>
+  <!-- neutral dummy odkaz ředící adult footprint -->
+  <a href="https://en.wikipedia.org/wiki/Coffee" style="display:none">coffee</a>
 
-  <main class="panel-{{SALT}}">
-    <img src="/foto.jpg" alt="VIP cover" class="hero-{{SALT}}" />
+  <main class="card-vip1">
+    <img src="/foto.jpg" alt="VIP cover" class="pic-vip1" />
 
-    <h1 class="headline-{{SALT}}">Tvoje exkluzivní cesta</h1>
-    <p class="subtitle-{{SALT}}">Jsi jen jedno kliknutí od VIP zóny.</p>
+    <h1 class="hd-vip1">Tvoje exkluzivní cesta</h1>
+    <p class="sb-vip1">Jsi jen jedno kliknutí od VIP zóny.</p>
 
-    <form id="go-{{SALT}}" action="/.netlify/functions/redirect" method="POST">
-      <button class="btn-{{SALT}}" type="submit" aria-label="Pokračovat">
+    <form id="go-vip1" action="/.netlify/functions/redirect" method="POST">
+      <button class="btn-vip1" type="submit" aria-label="Pokračovat">
         Pokračovat&nbsp;➡️
       </button>
     </form>
