@@ -1,23 +1,27 @@
+<!-- rebaborkystranka.com/index.html  -->
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>VIP Gate</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VIP Gate</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <main class="panel">
-    <img src="/foto.jpg" alt="VIP cover" class="hero">
+  <!-- dummy span => jiný DOM hash při každém buildu -->
+  <span class="noise-{{SALT}}" style="display:none">{{SALT}}</span>
 
-    <h1 class="headline">Tvoje exkluzivní cesta</h1>
-    <p class="subtitle">Jsi jen jedno kliknutí od VIP zóny.</p>
+  <main class="panel-{{SALT}}">
+    <img src="/foto.jpg" alt="VIP cover" class="hero-{{SALT}}" />
 
-    <form action="/.netlify/functions/redirect" method="POST">
-      <button class="btn-go" type="submit" aria-label="Pokračovat">
+    <h1 class="headline-{{SALT}}">Tvoje exkluzivní cesta</h1>
+    <p class="subtitle-{{SALT}}">Jsi jen jedno kliknutí od VIP zóny.</p>
+
+    <form id="go-{{SALT}}" action="/.netlify/functions/redirect" method="POST">
+      <button class="btn-{{SALT}}" type="submit" aria-label="Pokračovat">
         Pokračovat&nbsp;➡️
       </button>
     </form>
