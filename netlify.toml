@@ -1,4 +1,8 @@
+# === Netlify konfigurace ===
 [build]
+  # 1) Vygeneruje náhodný SALT v index.html + style.css
+  # 2) (Žádný další bundler nespouštíš, statické soubory už jsou v /public)
+  command   = "node randomize.js"
   publish   = "public"
   functions = "functions"
 
