@@ -1,4 +1,6 @@
 [build]
-  command = "node randomize.js"
-  publish = "public"
+  publish   = "public"
   functions = "functions"
+
+[functions]
+  node_bundler = "esbuild"
