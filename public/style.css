@@ -1,46 +1,38 @@
 /* --- základ --- */
-* { box-sizing:border-box; margin:0; padding:0; }
-
+*{box-sizing:border-box;margin:0;padding:0}
 body{
   font-family:'Inter',sans-serif;
   background:linear-gradient(135deg,#3e1c92 0%,#8b2fa1 50%,#ee609c 100%);
   min-height:100vh;
-  display:flex; justify-content:center; align-items:center;
+  display:flex;justify-content:center;align-items:center;
   color:#fff;
 }
 
 /* --- karta --- */
-.panel-{{SALT}}{
+.card-vip1{
   background:rgba(255,255,255,.07);
   backdrop-filter:blur(18px);
   border:1px solid rgba(255,255,255,.25);
   border-radius:24px;
-  width:100%; max-width:360px; text-align:center;
+  width:100%;max-width:360px;text-align:center;
   padding:40px 30px;
 }
 
 /* --- obrázek --- */
-.hero-{{SALT}}{
-  width:140px; height:140px; object-fit:cover; border-radius:18px;
-  box-shadow:0 6px 20px rgba(0,0,0,.35); margin-bottom:26px;
+.pic-vip1{
+  width:140px;height:140px;object-fit:cover;border-radius:18px;
+  box-shadow:0 6px 20px rgba(0,0,0,.35);margin-bottom:26px;
 }
 
 /* --- texty --- */
-.headline-{{SALT}}{ font-size:26px; font-weight:700; margin-bottom:8px; }
-.subtitle-{{SALT}}{ font-size:15px; opacity:.85; margin-bottom:28px; }
+.hd-vip1{font-size:26px;font-weight:700;margin-bottom:8px}
+.sb-vip1{font-size:15px;opacity:.85;margin-bottom:28px}
 
 /* --- tlačítko --- */
-.btn-{{SALT}}{
-  width:100%; padding:16px; font-size:18px; font-weight:600;
-  color:#311400; background:#ffd55c; border:none; border-radius:18px;
-  cursor:pointer;
-  transition:transform .15s, box-shadow .15s;
+.btn-vip1{
+  width:100%;padding:16px;font-size:18px;font-weight:600;
+  color:#311400;background:#ffd55c;border:none;border-radius:18px;
+  cursor:pointer;transition:transform .15s,box-shadow .15s;
 }
-.btn-{{SALT}}:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 16px rgba(0,0,0,.25);
-}
-.btn-{{SALT}}:active{
-  transform:translateY(0);
-  box-shadow:0 3px  8px rgba(0,0,0,.18);
-}
+.btn-vip1:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-vip1:active{transform:translateY(0);box-shadow:0 3px 8px rgba(0,0,0,.18)}
